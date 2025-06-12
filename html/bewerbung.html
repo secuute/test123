@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bewerbung – RSW Personalvermittlung</title>
+  <link rel="stylesheet" href="../css/bewerbung.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">RSW <span>Personalvermittlung</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="index.html">Über uns</a></li>
+        <li><a href="index.html">Leistungen</a></li>
+        <li><a href="bewerbung.html">Bewerbung</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- HERO -->
+  <section class="bewerbung-hero">
+    <h1>Jetzt bewerben bei RSW Personalvermittlung</h1>
+    <p>Wir suchen engagierte Fachkräfte für den Eisenbahnsektor – füllen Sie jetzt das Formular aus und starten Sie durch!</p>
+  </section>
+
+  <!-- FORMULAR -->
+  <section class="bewerbung-container">
+    <div class="bewerbung-form">
+      <h2>Online-Bewerbung</h2>
+      <p class="hinweis">Felder mit einem <span style="color: red;">*</span> sind Pflichtfelder</p>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <label for="name">Vollständiger Name *</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail-Adresse *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefon">Telefonnummer *</label>
+        <input type="tel" id="telefon" name="telefon" required>
+
+        <label for="position">Gewünschte Position *</label>
+        <select id="position" name="position" required>
+          <option value="">-- Bitte auswählen --</option>
+          <option value="lokfuehrer">Lokführer</option>
+          <option value="zugbegleiter">Zugbegleiter</option>
+          <option value="technik">Technisches Personal</option>
+          <option value="sonstige">Sonstige</option>
+        </select>
+
+        <label for="nachricht">Nachricht / Anschreiben</label>
+        <textarea id="nachricht" name="nachricht"></textarea>
+
+        <label for="lebenslauf">Lebenslauf (PDF) *</label>
+        <input type="file" id="lebenslauf" name="lebenslauf" accept=".pdf" required>
+
+        <label for="zeugnisse">Arbeitszeugnisse (optional, PDF)</label>
+        <input type="file" id="zeugnisse" name="zeugnisse" accept=".pdf">
+
+        <button type="submit">Bewerbung absenden</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

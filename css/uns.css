@@ -1,0 +1,206 @@
+/* uns.css */
+
+/* Hero „Über uns“ mit exakt demselben Verlauf wie auf der Startseite */
+.hero-us {
+    position: relative;
+    /* erst der Verlauf, dann das Bild */
+    background-image:
+      linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1)   0%,
+        rgba(0, 0, 0, 1)  40%,
+        rgba(0, 0, 0, 0.9) 60%,
+        rgba(0, 0, 0, 0.7) 75%,
+        rgba(0, 0, 0, 0.4) 90%,
+        rgba(0, 0, 0, 0.1) 98%,
+        rgba(0, 0, 0, 0)  100%
+      ),
+      url('../images/bahnhof.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* passt das Padding an dein Layout an */
+    padding-left: 60px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Text-Container über dem Verlauf */
+  .hero-us .hero-content {
+    max-width: 900px;
+    z-index: 1; /* über dem Hintergrund */
+  }
+  
+  .hero-us h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-us p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-us .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .hero-us .btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Optional: unten wieder ein leichter Fade ins Dunkle */
+  .hero-us::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #000);
+    z-index: 1;
+  }
+  
+  /* Mobile-Fallback */
+  @media (max-width: 768px) {
+    .hero-us {
+      padding: 40px 20px;
+      height: auto;
+      min-height: 300px;
+      justify-content: flex-start;
+    }
+    .hero-us h1 {
+      font-size: 2rem;
+    }
+    .hero-us p {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  /* Über uns */
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 1rem;
+    gap: 2rem;
+    background-color: #121212;
+  }
+  
+  .about-us .text {
+    flex: 1 1 400px;
+    color: #fff;
+  }
+  
+  .about-us .text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-us .text p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .about-us .image {
+    flex: 1 1 400px;
+  }
+  
+  .about-us .image img {
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+  }
+  
+  /* Call to Action */
+ /* uns.css */
+
+/* ---------- Call to Action mit Hintergrundbild ---------- */
+.cta-us {
+    position: relative;
+    /* erst leichter Dark‐Overlay‐Verlauf, dann dein Bild */
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url('../images/sonnenuntergang.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1rem;
+    overflow: hidden;
+  }
+  
+  .cta-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .cta-us .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .cta-us .btn:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* optional: leichter Fade am unteren Rand */
+  .cta-us::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+    z-index: 1;
+  }
+  
+  
+  .cta-us h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Footer-Anpassung (falls nötig) */
+  .site-footer {
+    background-color: #121212;
+    color: #ccc;
+    padding: 2rem 1rem;
+  }
+  
+  .site-footer .footer-logo h2 {
+    color: #fff;
+  }
+  
+  .site-footer a {
+    color: #ccc;
+  }
+  
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+  

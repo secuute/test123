@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns – RSW Personalvermittlung</title>
+  <!-- Basis-Styles -->
+  <link rel="stylesheet" href="../css/index.css">
+  <!-- Seitenspezifische Styles -->
+  <link rel="stylesheet" href="../css/uns.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">RSW <span>Personalvermittlung</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="uns.html" class="active">Über uns</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="bewerbung.html">Bewerbung</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav ul').classList.toggle('active');
+    }
+  </script>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero-us">
+        <div class="hero-content">
+          <h1>Personalvermittlungsdienste<br>speziell für Sie in Ulm</h1>
+          <p>Die Personalvermittlung Ulm bei RSW bietet maßgeschneiderte Personallösungen für Unternehmen und Jobsuchende im Bereich Eisenbahnverkehr. Erfahren Sie mehr über uns und unsere Personalvermittlungsdienste, um die ideale Fachkräftevermittlung in Ulm zu erreichen.</p>
+          <a href="kontakt.html" class="btn">Jetzt kontaktieren</a>
+        </div>
+      </section>
+
+    <!-- Über uns -->
+    <section class="about-us">
+      <div class="text">
+        <h2>Ihre Fachkräftevermittlung in Ulm</h2>
+        <p>Als verlässlicher Partner für die Personalvermittlung im Eisenbahnsektor bieten wir in Ulm maßgeschneiderte Lösungen für Ihre Personalbedarfe. Mit langjähriger Branchenerfahrung und einem engagierten Team vermitteln wir qualifizierte Fachkräfte – vom Triebfahrzeugführer bis zum Fahrdienstleiter. Unser Fokus liegt auf Qualität, Zuverlässigkeit und einer passgenauen Auswahl, damit Ihr Unternehmen auf stabilem Gleis in die Zukunft fährt. Durch persönliche Betreuung und einen individuellen Vermittlungsansatz sorgen wir dafür, dass Sie genau das Personal finden, das zu Ihren Anforderungen passt.</p>
+      </div>
+      <div class="image">
+        <img src="../images/Gleis.jpg" alt="Moderne Lok am Gleis">
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-us">
+      <h2>Rufen Sie jetzt an für Ihre Personalvermittlung in Ulm!</h2>
+      <a href="kontakt.html" class="btn">Jetzt kontaktieren</a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2>RSW</h2>
+        <p>Personalvermittlung</p>
+      </div>
+      <div class="footer-section">
+        <h3>Adresse</h3>
+        <p>Virchowstraße 31<br>89075 Ulm</p>
+      </div>
+      <div class="footer-section">
+        <h3>Kontakt</h3>
+        <p><strong>Telefon:</strong> <a href="tel:01728484154">0172 8484154</a><br>
+           <strong>E-Mail:</strong> <a href="mailto:wintenbryan@gmail.com">wintenbryan@gmail.com</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Weitere Links</h3>
+        <p><a href="impressum.html">Impressum</a><br>
+           <a href="datenschutz.html">Datenschutz</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+/* Kontaktseite Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+  }
+  
+  /* HEADER */
+  header {
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    font-size: 14px;
+    display: block;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 999px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #444;
+  }
+  
+
+  .kontakt-hero {
+    position: relative;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3)),
+      url('../images/kontakt.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 60px;
+    color: white;
+  }
+  
+  .kontakt-hero .hero-content {
+    max-width: 800px;
+    z-index: 2;
+  }
+  
+  .kontakt-hero h1 {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  
+  /* KONTAKT */
+  .kontakt {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+ 
+  
+  .kontakt h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .kontakt p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .kontakt-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+
+
+  /* FORMULAR */
+  .kontakt-form {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .kontakt-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .kontakt-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .kontakt-form form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .kontakt-form .hinweis {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: left; 
+  }
+  
+  .kontakt-form .hinweis span {
+    color: red;
+  }
+  
+  
+  .kontakt-form input,
+  .kontakt-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #888;
+    background-color: #111;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .kontakt-form textarea {
+    resize: vertical;
+    height: 120px;
+    grid-column: 1 / 3;
+    font-size: 16px;
+  }
+  
+  .kontakt-form button {
+    grid-column: 1 / 3;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .kontakt-form button:hover {
+    background-color: #444;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .kontakt-container {
+      flex-direction: column;
+    }
+  
+    .kontakt-form form {
+      grid-template-columns: 1fr;
+    }
+  
+    .kontakt-form button,
+    .kontakt-form textarea {
+      grid-column: auto;
+    }
+  }
+  
+  
+  /* INFOS */
+  .kontakt-info {
+    flex: 1;
+    min-width: 300px;
+
+  }
+  
+  .kontakt-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .kontakt-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .kontakt-info a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Karte */
+  .kontakt-info iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  

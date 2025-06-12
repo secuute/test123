@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSW Personalvermittlung</title>
+  <link rel="stylesheet" href="../css/index.css">
+  
+</head>
+<script>
+  function toggleText(element) {
+    const card = element.closest('.card');
+    card.classList.toggle('active');
+  }
+</script>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('nav ul');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
+
+<body>
+
+  <header>
+    <div class="logo">RSW <span>Personalvermittlung</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="uns.html">Über uns</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="bewerbung.html">Bewerbung</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>RSW Personalvermittlung –<br>Ihr Partner für qualifiziertes<br>Eisenbahnpersonal in Ulm!</h1>
+      <p>
+        Kontaktieren Sie uns schon heute!
+      </p>
+      <a href="kontakt.html" class="btn">Jetzt kontaktieren</a>
+    </div>
+  </section>
+
+  
+  <section class="stats">
+    <div class="stat">3<br><span>Jahre Erfahrung</span></div>
+    <div class="stat">5+<br><span>Zufriedene Kunden</span></div>
+    <div class="stat">10+<br><span>Vermittelte Lokführer</span></div>
+    <div class="stat">10+<br><span>&nbsp;</span></div>
+    <div class="stat">10+<br><span>&nbsp;</span></div>
+  </section>
+
+  <section class="why">
+    <div class="text">
+      <h2>Warum RSW Personalvermittlung?</h2>
+      <p>
+        Die Eisenbahnbranche steht vor vielen Herausforderungen – wir helfen Ihnen, diese zu meistern. Mit uns an Ihrer Seite profitieren Sie von:
+      </p>
+      <ul>
+        <li>Erfahrung und Kompetenz: Unsere Lokführer bringen mehrjährige Berufserfahrung und höchste Professionalität mit. </li>
+        <li>Flexibilität und Verlässlichkeit: Ob für geplante Einsätze oder zur Überbrückung kurzzeitiger Engpässe - Wir stellen Ihnen das passende Personal zur Verfügung.</li>
+        <li>Qualität und Sicherheit: Unsere Lokführer sind bestens geschult und erfüllen alle notwendigen Standards für einen reibungslosen Betrieb.</li>
+      </ul>
+      <a href="kontakt.html" class="btn">Jetzt Kontakt aufnehmen</a>
+    </div>
+    <div class="image">
+      <img src="../images/zug.jpg" alt="Zugbild">
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Experten für den Eisenbahnsektor</h2>
+    <h3>Wer wir sind</h3>
+    <p>
+      Die RSW Personalvermittlung ist Ihre spezialisierte Personalüberlassungsfirma im Bereich der Eisenbahnbranche.
+      Wir vermitteln erfahrene und kompetente Lokführer an Eisenbahnunternehmen in ganz Deutschland — flexibel, professionell und zuverlässig.
+    </p>
+    <p>
+      Unser Team besteht aus hoch qualifizierten Lokführern mit mehreren Jahren Berufserfahrung.
+      Mit uns haben Sie einen Partner, der die Herausforderungen der Branche versteht und eine unkomplizierte Zusammenarbeit ermöglicht.
+    </p>
+
+    <div class="mission-vision">
+      <div class="card">
+        <h4>Unsere Mission</h4>
+        <p>
+          Wir haben uns zum Ziel gesetzt, die immer weiter wachsenden Fahrgastzahlen mit dem passenden Personal zu bewältigen
+          und gleichzeitig dem Lokführermangel entgegenzuwirken. Mit RSW Personalvermittlung stellen wir sicher,
+          dass der Schienenverkehr in Bewegung bleibt.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Unsere Vision</h4>
+        <p>
+          Perspektiven schaffen: Langfristig möchten wir unser Angebot erweitern und Lokführern Weiterbildung und Entwicklungsmöglichkeiten anbieten,
+          um den hohen Standards der Branche gerecht zu werden.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<section class="image-cards">
+  <div class="card">
+    <img src="../images/bild1.jpeg" alt="Erfahrung">
+    <div class="card-label" onclick="toggleText(this)">
+      Erfahrung <span>+</span>
+    </div>
+    <p class="card-text">Mehr als 10 Jahre Branchenerfahrung machen uns zu einem starken Partner auf den Schienen.</p>
+  </div>
+  <div class="card">
+    <img src="../images/bild2.jpg" alt="Netzwerk">
+    <div class="card-label" onclick="toggleText(this)">
+      Netzwerk <span>+</span>
+    </div>
+    <p class="card-text">Unser deutschlandweites Netzwerk sichert Ihnen qualifiziertes Personal genau dort, wo Sie es brauchen.</p>
+  </div>
+  <div class="card">
+    <img src="../images/bild3.jpg" alt="Kundenzufriedenheit">
+    <div class="card-label" onclick="toggleText(this)">
+      Kundenzufriedenheit <span>+</span>
+    </div>
+    <p class="card-text">Bei uns steht der Mensch im Mittelpunkt – mit 100 % Einsatz für Ihre Zufriedenheit.</p>
+  </div>
+  <div class="card">
+    <img src="../images/bild4.png" alt="Effizienz">
+    <div class="card-label" onclick="toggleText(this)">
+      Effizienz <span>+</span>
+    </div>
+    <p class="card-text">Schnelle Prozesse, klare Kommunikation, optimale Ergebnisse – ohne Umwege.</p>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>RSW</h2>
+      <p>Personalvermittlung</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Adresse</h3>
+      <p>Virchowstraße 31<br>89075 Ulm</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Kontakt</h3>
+      <p><strong>Telefon:</strong> <a href="tel:01728484154">0172 8484154</a><br>
+      <strong>E-Mail:</strong> <a href="mailto:wintenbryan@gmail.com">wintenbryan@gmail.com</a></p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Weitere Links</h3>
+      <p><a href="impressum.html">Impressum</a><br>
+      <a href="#">Datenschutz</a></p>
+    </div>
+  </div>
+</footer>
+
+</html>

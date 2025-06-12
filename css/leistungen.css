@@ -1,0 +1,147 @@
+/* leistungen.css */
+
+/* Hero „Leistungen“ mit Startseiten-Verlauf */
+.hero-leistungen {
+    position: relative;
+    background-image:
+      linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1)   0%,
+        rgba(0, 0, 0, 1)  40%,
+        rgba(0, 0, 0, 0.9) 60%,
+        rgba(0, 0, 0, 0.7) 75%,
+        rgba(0, 0, 0, 0.4) 90%,
+        rgba(0, 0, 0, 0.1) 98%,
+        rgba(0, 0, 0, 0)  100%
+      ),
+      url('../images/leistungen.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 60px;
+    overflow: hidden;
+  }
+  
+  /* Text-Container über dem Verlauf */
+  .hero-leistungen .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 40px;
+  }
+  
+  /* Überschrift & Text */
+  .hero-leistungen h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .hero-leistungen p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  /* Button */
+  .hero-leistungen .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 999px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .hero-leistungen .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Sanfter Fade am unteren Rand */
+  .hero-leistungen::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #000);
+    z-index: 1;
+  }
+  
+  /* Responsive für kleine Screens */
+  @media (max-width: 768px) {
+    .hero-leistungen {
+      padding: 40px 20px;
+      height: auto;
+      min-height: 300px;
+      justify-content: flex-start;
+    }
+    .hero-leistungen h1 {
+      font-size: 2rem;
+    }
+    .hero-leistungen p {
+      font-size: 1rem;
+    }
+  }
+
+  /* ------------------------------------------------------------------
+   Details-Sektion „Entdecken Sie Ihr Personalpotenzial“
+------------------------------------------------------------------ */
+.details-leistungen {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    background-color: #000;
+  }
+  
+  .details-text {
+    flex: 1 1 300px;
+    color: #fff;
+  }
+  
+  .details-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .details-text p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  .details-image {
+    flex: 1 1 300px;
+  }
+  
+  .details-image img {
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  /* Responsive: untereinander auf kleinen Bildschirmen */
+  @media (max-width: 768px) {
+    .details-leistungen {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+    .details-text h2 {
+      font-size: 2rem;
+    }
+    .details-text p {
+      font-size: 1rem;
+    }
+  }
+  

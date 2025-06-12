@@ -14,7 +14,7 @@
         rgba(0, 0, 0, 0.1) 98%,
         rgba(0, 0, 0, 0)  100%
       ),
-      url('../images/leistungen.jpg');
+      url('../html/images/leistungen.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;

@@ -66,7 +66,7 @@ nav ul li a:hover {
     rgba(0, 0, 0, 0.1) 98%,
     rgba(0, 0, 0, 0) 100%
   ),
-  url('../html/images/zug.jpg');  
+  url('images/zug.jpg');  
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -120,7 +120,7 @@ nav ul li a:hover {
 
 .stats::before {
   content: "";
-  background-image: url('../html/images/logo.png');
+  background-image: url('images/logo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 400px;

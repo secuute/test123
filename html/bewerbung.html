@@ -6,10 +6,27 @@
   <title>Bewerbung – RSW Personalvermittlung</title>
   <link rel="stylesheet" href="css/bewerbung.css">
 </head>
+
+<script>
+  function toggleText(element) {
+    const card = element.closest('.card');
+    card.classList.toggle('active');
+  }
+</script>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('nav ul');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
 <body>
 
   <header>
     <div class="logo">RSW <span>Personalvermittlung</span></div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
     <nav>
       <ul>
         <li><a href="index.html">Startseite</a></li>

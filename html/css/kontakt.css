@@ -48,6 +48,43 @@ body {
     background-color: #444;
   }
   
+    /* Burger-Icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #222;
+  border-radius: 8px;
+  margin-left: auto;
+}
+
+/* ===== RESPONSIVE BURGER-MENU ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    background-color: #111;
+    padding: 10px 0;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
   .kontakt-hero {
     position: relative;
